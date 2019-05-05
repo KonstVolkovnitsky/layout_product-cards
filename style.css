@@ -1,4 +1,4 @@
-body {
+section {
   width: 200px;
   margin: 0;
 
@@ -13,6 +13,16 @@ body {
   font-size: 11px;
   line-height: 13px;
   color: #000;
+}
+
+h1 {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+[src="images/imac.jpeg"] {
+  height: 134px;
+  width: 160px;
 }
 
 .picture {
@@ -38,6 +48,11 @@ body {
   margin: 0 15px 25px;
 }
 
+.reviews > p {
+  text-align: center;
+  margin: 0;
+}
+
 .price {
   margin: 0 15px 20px;
   align-items: flex-end;
@@ -50,14 +65,16 @@ body {
   text-align: right;
 }
 
-button {
+a.buy-link {
   height: 39px;
   width: 170px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #00acdc;
   color: #fff;
   border-radius: 5px;
-  border: 0;
+  border: 1px solid white;
   margin: 0 15px 15px;
   
   font-weight: bold;
@@ -71,7 +88,7 @@ a {
   text-decoration: none;
 }
 
-button:hover {
+a.buy-link:hover {
   background: #fff;
   border: 1px solid #00acdc;
   color: #00acdc;
